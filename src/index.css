@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply box-border bg-stone-100 font-['Karla'];
+  }
+  button {
+    @apply flex justify-center items-center p-4 bg-gray-400 text-white w-20 rounded-md text-xl button-shadow font-['Karla'];
+  }
+
+  .button-stack {
+    @apply flex gap-4 shrink-0;
+  }
+
+  .calculator-container {
+    @apply flex flex-col gap-4 p-6 border border-gray-200 rounded-3xl custom-shadow;
+  }
+}
+
+@layer utilities {
+  .custom-shadow {
+    box-shadow:
+      rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+      rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+      rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+  }
+}
+
+@layer utilities {
+  .button-shadow {
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+  }
+}
